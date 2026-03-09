@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+:root {
+  --bg: #f0f4ff;
+  --bg-card: #ffffff;
+  --bg-section: #e8eeff;
+  --cobalt: #1a3adb;
+  --cobalt-light: #3d5ff5;
+  --cobalt-dark: #0f2499;
+  --cobalt-soft: rgba(26, 58, 219, 0.08);
+  --gold: #c8973a;
+  --gold-light: #f0c96a;
+  --navy: #0d1b4b;
+  --text: #0d1b4b;
+  --text-mid: #4a5a8a;
+  --text-light: #8a9ac0;
+  --border: #d0d8f0;
+  --red: #d64045;
+  --green: #25a244;
+  --shadow: 0 4px 24px rgba(26, 58, 219, 0.08);
+  --shadow-hover: 0 12px 40px rgba(26, 58, 219, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Libre Baskerville', 'Times New Roman', Times, serif;
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(ellipse at 10% 20%, rgba(26,58,219,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 80%, rgba(200,151,58,0.06) 0%, transparent 50%);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+a { text-decoration: none; color: inherit; }
+
+button {
+  font-family: 'Jost', sans-serif;
+  transition: all 0.25s ease;
+}
+
+button:hover:not(:disabled) { transform: translateY(-2px); }
+button:disabled { opacity: 0.5; cursor: not-allowed; transform: none !important; }
+
+input { font-family: 'Jost', sans-serif; }
+
+input:focus {
+  outline: none;
+  border-color: var(--cobalt) !important;
+  box-shadow: 0 0 0 3px rgba(26,58,219,0.12) !important;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--cobalt); border-radius: 10px; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}

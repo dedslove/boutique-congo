@@ -1,0 +1,14 @@
+# Django
+boutique/venv/
+boutique/__pycache__/
+boutique/db.sqlite3
+boutique/.env
+boutique/media/
+
+# React
+boutique-frontend/node_modules/
+boutique-frontend/.env
+boutique-frontend/dist/
+
+# VS Code
+.vscode/
